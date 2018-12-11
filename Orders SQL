@@ -1,0 +1,4 @@
+CREATE TABLE order_breakdown
+(order_id varchar, product_name varchar, discount decimal, sales decimal, quantity decimal, category varchar);
+
+COPY public.order_breakdown FROM '/Users/YourUsername/Downloads/OrderBreakdown.csv' DELIMITER ',' CSV HEADER;
