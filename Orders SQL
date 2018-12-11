@@ -1,4 +1,11 @@
+--Create tables and import table data
+
 CREATE TABLE order_breakdown
 (order_id varchar, product_name varchar, discount decimal, sales decimal, quantity decimal, category varchar);
 
 COPY public.order_breakdown FROM '/Users/YourUsername/Downloads/OrderBreakdown.csv' DELIMITER ',' CSV HEADER;
+
+CREATE TABLE orders_list
+(order_id varchar, order_date date, customer_name varchar, country varchar);
+
+COPY public.orders_list FROM '/Users/YourUsername/Downloads/ListOfOrders.csv' DELIMITER ',' CSV HEADER;
